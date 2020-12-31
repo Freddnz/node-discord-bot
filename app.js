@@ -1,5 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+require('dotenv').config();
+
+const {TOKEN_BOT_DISCORD} =process.env
 
 //Evento de conexion
 client.on('ready', ()=>{
@@ -52,4 +55,4 @@ client.on('message', async msg =>{
     }
 });
 
-client.login('Nzk0MDIxNDk3ODE5MTAzMjcz.X-0wJQ.x1tecEyqJw_2Juk9vRUC53oD3K0');
+client.login(TOKEN_BOT_DISCORD);
